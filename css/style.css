@@ -1,0 +1,45 @@
+/*RESET*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*GENERAL*/
+
+* {
+    font-size: 25px;
+}
+
+.header-top {
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    padding: 15px;
+}
+
+.logo, .login {
+    width: 20%;
+    padding: 10px;
+}
+
+.links {
+    width: 60%;
+    text-align: center;
+    padding: 10px;
+}
+
+.links a {
+    text-decoration: none;
+    color: black;
+}
+
+/*DEBUG*/
+.debug header  {
+    background-color: #ADD8E6;
+}
+
+.debug header .logo, .links, .login {
+    background-color: #DAA520;
+    border: 3px dashed black;
+}
