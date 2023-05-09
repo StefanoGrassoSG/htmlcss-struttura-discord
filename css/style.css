@@ -34,6 +34,18 @@
     color: black;
 }
 
+.header-bottom {
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header-bottom > div {
+    width: 900px;
+    height: 400px;
+}
+
 /*DEBUG*/
 .debug header  {
     background-color: #ADD8E6;
@@ -42,4 +54,13 @@
 .debug header .logo, .links, .login {
     background-color: #DAA520;
     border: 3px dashed black;
+}
+
+.debug .header-bottom {
+    background-color: #00008B;
+}
+
+.debug .header-bottom div {
+    border: 3px dashed black;
+    background-color: #EE82EE;
 }
