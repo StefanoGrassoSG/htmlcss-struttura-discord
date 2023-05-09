@@ -30,6 +30,25 @@
     height: 400px;
 }
 
+/*CONTENT*/
+
+.logo, .login {
+    width: 20%;
+    padding: 10px;
+}
+
+.links {
+    width: 60%;
+    text-align: center;
+    padding: 10px;
+}
+
+.links a {
+    text-decoration: none;
+    color: black;
+}
+
+
 /*MAIN*/
 
 /*FIRST ROW*/
@@ -109,35 +128,33 @@
 
 /*FOOTER*/
 /*FIRST ROW*/
+.footer-top {
+    padding: 10px 0 30px 0;
+}
+
 .row-1f {
     max-width: 1200px;
     margin: auto;
     height: 600px;
     display: flex;
-    justify-content: center;
-    align-items: center;
+}
+
+.first-column {
+    width: 30%;
+}
+
+.second-column {
+    display: flex;
+    width: 70%
+}
+
+.part-1, .part-2, .part-3, .part-4 {
+    width: 25%;
 }
 
 
 
 
-/*CONTENT*/
-
-.logo, .login {
-    width: 20%;
-    padding: 10px;
-}
-
-.links {
-    width: 60%;
-    text-align: center;
-    padding: 10px;
-}
-
-.links a {
-    text-decoration: none;
-    color: black;
-}
 
 
 
@@ -192,6 +209,19 @@
     background-color: #23272A;
 }
 
-.debug .row-1f {
+.debug .first-column {
     border: 3px dashed black;
+    background-color: #F08080;
+}
+
+.debug .row-1f :not(.first-column) {
+    background-color: #20B2AA;
+}
+
+.debug .second-column {
+    border: 3px dashed black;
+}
+
+.debug .second-column div {
+    border: 3px dashed white;
 }
