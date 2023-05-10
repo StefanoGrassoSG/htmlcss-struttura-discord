@@ -5,12 +5,33 @@
     box-sizing: border-box;
 }
 
+/*GENERAL*/
+.my-row {
+    max-width: 1200px;
+    margin: auto;
+    padding: 50px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.my-row .column-1 {
+    width: 60%;
+    height: 500px;
+}
+
+.my-row .column-2 {
+    width: 40%;
+    height: 500px;
+}
+
+
 /*HEADER*/
-/*HEADER-TOP*/
-* {
+header {
     font-size: 25px;
 }
 
+/*HEADER-TOP*/
 .header-top {
     max-width: 1200px;
     margin: auto;
@@ -20,7 +41,7 @@
 
 /*HEADER-BOTTOM*/
 .header-bottom {
-    height: 500px;
+    padding: 50px 0;;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -31,11 +52,15 @@
     height: 400px;
 }
 
-/*CONTENT*/
+/*NAV-BAR HEADER*/
 
 .logo, .login {
     width: 20%;
     padding: 10px;
+}
+
+.login {
+    text-align: right;
 }
 
 .links {
@@ -49,91 +74,24 @@
     color: black;
 }
 
-
-/*MAIN*/
-
-/*FIRST ROW*/
-.row-1 {
-    max-width: 1200px;
-    margin: auto;
-    height: 600px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.row-1 .column-1 {
-    width: 60%;
-    height: 500px;
-}
-
-.row-1 .column-2 {
-    width: 40%;
-    height: 500px;
-}
-
-/*SECOND ROW*/
-.row-2 {
-    max-width: 1200px;
-    margin: auto;
-    height: 600px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.row-2 .column-1 {
-    width: 40%;
-    height: 500px;
-}
-
-.row-2 .column-2 {
-    width: 60%;
-    height: 500px;
-}
-
-/*THIRD ROW*/
-.row-3 {
-    max-width: 1200px;
-    margin: auto;
-    height: 600px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.row-3 .column-1 {
-    width: 40%;
-    height: 500px;
-}
-
-.row-3 .column-2 {
-    width: 60%;
-    height: 500px;
-}
-
-/*FOURTH ROW*/
-.row-4 {
-    max-width: 1200px;
-    margin: auto;
-    height: 1100px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
+/*BIG-COLUMN*/
 .big-column {
     width: 100%;
     height: 1000px;
 }
 
 /*FOOTER*/
+
+footer{
+    background-color: #23272A;
+}
+
 /*FOOTER-TOP*/
 .footer-top {
     padding: 10px 0 30px 0;
 }
 
-.row-1f {
+.row-footer {
     max-width: 1200px;
     margin: auto;
     height: 600px;
@@ -172,12 +130,6 @@
     padding: 5px;
 }
 
-
-
-
-
-
-
 /*DEBUG*/
 .debug header  {
     background-color: #ADD8E6;
@@ -197,12 +149,12 @@
     background-color: #EE82EE;
 }
 
-.debug .row-1 .column-1,  .row-3 .column-1{
+.debug .my-row .column-1,  .row-3 .column-1{
     background-color: #1E90FF;
     border: 3px dashed black;
 }
 
-.debug .row-1 .column-2, .row-3 .column-2 {
+.debug .my-row .column-2, .row-3 .column-2 {
     background-color: #FFC0CB;
     border: 3px dashed black;
 }
@@ -225,16 +177,12 @@
     border: 3px dashed black;
 }
 
-.debug footer{
-    background-color: #23272A;
-}
-
 .debug .first-column {
     border: 3px dashed black;
     background-color: #F08080;
 }
 
-.debug .row-1f :not(.first-column) {
+.debug .row-footer :not(.first-column) {
     background-color: #20B2AA;
 }
 
